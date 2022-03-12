@@ -1,4 +1,5 @@
 #!/bin/bash
+# Format a new blank drive to a filesystem of your choice.
 # ex: mm /dev/sda1 test ext4 /mnt
 run() {
   if [[ ! -z "$1" && ! -z "$2" && ! -z "$3" && ! -z "$4" ]]; then
@@ -10,4 +11,4 @@ run() {
           echo "Use: mm <drive> <label> <fs> <location>"
   fi
 }
-run
+run()
